@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظم المعلومات الجغرافية والمساحة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>نظم المعلومات الجغرافية والمساحة</h1>
+    </div>
+
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <form action="test.php">
+                <fieldset>
+                    <legend>تسجيل الدخول</legend>
+                    <div class="form-group">
+                        <label for="username">اسم المستخدم</label>
+                        <input type="text" id="username" name="user" size="20" placeholder="أدخل اسم المستخدم" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">كلمة المرور</label>
+                        <input type="password" id="password" name="pass" size="20" placeholder="أدخل كلمة المرور">
+                    </div>
+                    <div class="form-group">
+                        <p>المستوى الدراسي</p>
+                        <label for="level3">المستوى الثالث</label>
+                        <input type="checkbox" id="level3" name="level3">
+                        <br>
+                        <label for="level4">المستوى الرابع</label>
+                        <input type="checkbox" id="level4" name="level4">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Accordion Section -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="checkbox" id="gis">
+                <label for="gis" class="accordion-header">نظم المعلومات الجغرافية (GIS)</label>
+                <div class="accordion-body">
+                    <p><strong>نظام المعلومات الجغرافية (GIS)</strong> هو نظام حاسوبي يستخدم لتحليل وعرض البيانات المرتبطة بالمواقع الجغرافية على الخرائط.</p>
+                    <div class="image-gallery">
+                        <div class="image-card">
+                            <img src="./images/giss.png" alt="GIS Illustration" class="media">
+                            <p class="caption">صورة توضيحية لنظم المعلومات الجغرافية</p>
+                        </div>
+                    </div>
+                    <a href="https://storymaps.arcgis.com/stories/353aefe735e142fda2a7abe697cd468f" target="_blank" class="btn">البوابة الإلكترونية</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" id="survey">
+                <label for="survey" class="accordion-header">المساحة (Survey)</label>
+                <div class="accordion-body">
+                    <p><strong>المساحة</strong> هي طريقة لجمع المعلومات باستخدام أسئلة موجهة من عينة من الأشخاص بهدف فهم المجتمعات ككل.</p>
+                    <div class="image-gallery">
+                        <div class="image-card">
+                            <img src="./images/remote.jpeg" alt="Remote Sensing" class="media">
+                            <p class="caption">صورة للاستشعار عن بعد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <h1>الفرق بين GIS وRemote Sensing وSurvey</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>العنصر</th>
+                    <th>GIS</th>
+                    <th>Remote Sensing</th>
+                    <th>Survey</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>التعريف</td>
+                    <td>نظام لإدارة وتحليل البيانات المكانية والمعلومات الجغرافية.</td>
+                    <td>جمع معلومات عن سطح الأرض باستخدام الأقمار الصناعية أو الطائرات.</td>
+                    <td>جمع بيانات مباشرة من الأرض باستخدام أدوات قياس دقيقة.</td>
+                </tr>
+                <tr>
+                    <td>طرق الجمع</td>
+                    <td>من قواعد البيانات، الخرائط، المسوحات.</td>
+                    <td>باستخدام أجهزة الاستشعار من الفضاء أو الجو.</td>
+                    <td>باستخدام معدات مثل جهاز قياس المسافات والـ GPS.</td>
+                </tr>
+                <tr>
+                    <td>الدقة</td>
+                    <td>تعتمد على دقة المصدر المستخدم.</td>
+                    <td>تعتمد على دقة الصور الفضائية أو الجوية.</td>
+                    <td>دقيقة جدًا وتفصيلية.</td>
+                </tr>
+                <tr>
+                    <td>أمثلة على الاستخدام</td>
+                    <td>إدارة المدن، تحليل الشبكات، التخطيط العمراني.</td>
+                    <td>رصد الغابات، التغير المناخي، الزراعة.</td>
+                    <td>رسم الخرائط التفصيلية، المشاريع الهندسية، بناء الطرق.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Landsat Table -->
+        <h1>أجهزة الاستشعار في Landsat</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>الجهاز</th>
+                    <th>المنصة</th>
+                    <th>الطيف</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MSS</td>
+                    <td>Landsat</td>
+                    <td>VNIR</td>
+                </tr>
+                <tr>
+                    <td>TM</td>
+                    <td>Landsat 4-5</td>
+                    <td>VNIR & Thermal</td>
+                </tr>
+                <tr>
+                    <td>ETM+</td>
+                    <td>Landsat 7</td>
+                    <td>Panchromatic & VNIR & Thermal</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Geography Definition -->
+        <h1>ماذا تعني الجغرافيا ونظم المعلومات الجغرافية</h1>
+        <p>الجغرافيا: علم يدرس الأرض، والبيئة، والظواهر الطبيعية والبشرية، وكيفية توزيعها وعلاقتها ببعضها على سطح الأرض.</p>
+        <p>نظام المعلومات الجغرافية (GIS): هو نظام حاسوبي يستخدم لربط وتحليل المعلومات الجغرافية وعرضها على الخرائط لاتخاذ قرارات أفضل.</p>
+        <div class="image-gallery">
+            <div class="image-card">
+                <img src="./images/gis reomte.jpeg" alt="GIS and Remote Sensing" class="media">
+                <p class="caption">صورة لـGIS والاستشعار عن بعد</p>
+            </div>
+            <div class="image-card">
+                <img src="./images/gps.jpg" alt="GPS" class="media">
+                <p class="caption">صورة لنظام تحديد المواقع GPS</p>
+            </div>
+        </div>
+
+        <!-- YouTube Video Section -->
+        <h1>فيديو توضيحي عن نظم المعلومات الجغرافية</h1>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/v7c5ZrhwJps" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Details Section -->
+        <details class="details-section">
+            <summary>معلومات إضافية عن GIS</summary>
+            <p>خرائط USGS الطبوغرافية الحديثة مشتقة من مجموعات بيانات GIS ويتم توزيعها كملفات PDF رقمية لصالح المستخدمين غير المتخصصين. تعتبر خرائط USGS الطبوغرافية ناتجًا لـGIS، وليست مدخلات له. العديد من برامج GIS لا يمكنها قراءة أو استيراد ملفات PDF...</p>
+        </details>
+    </div>
+
+    <div class="footer">
+        <p>تواصلوا معنا: Mahmoud444773@gmail.com | © 2025 قسم المساحة</p>
+    </div>
+</body>
+</html>
